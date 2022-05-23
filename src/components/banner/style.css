@@ -11,9 +11,9 @@
 .text_banner{
     width: 800px;
     height: 210px;
+    padding: 20px 0px 0px 80px;
     color: rgba(72, 72, 72, 1);
 }
 .text_banner span{
     color: rgba(255, 152, 51, 1);
-    padding: 20px 0px 0px 80px;
 }
