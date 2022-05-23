@@ -1,2 +1,19 @@
 .banner {
+ width: 100%;
+ height: 408px;
+ background-image: url(./Component\ 15.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: space-between;
+ font-size: 16px;
+}
+.text_banner{
+    width: 800px;
+    height: 210px;
+    color: rgba(72, 72, 72, 1);
+}
+.text_banner span{
+    color: rgba(255, 152, 51, 1);
+    padding: 20px 0px 0px 80px;
 }
