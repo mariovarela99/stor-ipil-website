@@ -8,7 +8,7 @@ const Header = () => {
       <header>
         <nav class="header_info">
           <p>
-            StorIPIL - All rights reserved |{" "}
+            StorIPIL - All rights reserved |
             <a href="mailto:storipil@gmail.com">storipil@gmail.com</a>
           </p>
           <p>
@@ -17,8 +17,8 @@ const Header = () => {
               <div>
                 <input type="checkbox" class="checkbox" />
                 <label for="checkbox" class="label_mode">
-                  <i class="fa-regular fa-moon"></i>
-                  <i class="fa-regular fa-sun-bright"></i>
+                  <i class="fa-regular fa-moon" />
+                  <i class="fa-regular fa-sun-bright" />
                   <div class="ball"></div>
                 </label>
               </div>
@@ -30,32 +30,32 @@ const Header = () => {
           <ul class="menu">
             <li>
               <a href="/">
-                <i class="fa-solid fa-house"></i> Home
+                <i class="fa-solid fa-house" /> Home
               </a>
             </li>
             <li>
               <a href="/">
-                <i class="fa-solid fa-bag-shopping"></i> Produtos
+                <i class="fa-solid fa-bag-shopping" /> Produtos
               </a>
             </li>
             <li>
               <a href="/">
-                <i class="fa-solid fa-wand-magic-sparkles"></i> Novos
+                <i class="fa-solid fa-wand-magic-sparkles" /> Novos
               </a>
             </li>
             <li>
               <a href="/">
-                <i class="fa-solid fa-ranking-star"></i> Destaques
+                <i class="fa-solid fa-ranking-star" /> Destaques
               </a>
             </li>
             <li>
               <a href="/">
-                <i class="fa-solid fa-award"></i> Promoções
+                <i class="fa-solid fa-award" /> Promoções
               </a>
             </li>
             <li>
               <a href="/">
-                <i class="fa-solid fa-tags"></i> Mais vendidos
+                <i class="fa-solid fa-tags" /> Mais vendidos
               </a>
             </li>
           </ul>
