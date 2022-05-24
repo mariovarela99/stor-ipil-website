@@ -15,25 +15,51 @@
 }
 
 .fa-moon{
-    color: 1px solid rgb(255, 168, 37);
+    color: rgb(255, 168, 37);
 }
 
-.fa-sun-bright{
-    color: 1px solid rgb(255, 168, 37);
+.fa-sun{
+    color: rgb(255, 168, 37);
 }
-
+*{
+    box-sizing: border-box;
+}
 .darkmode{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8px;
 }
+  
 .label_mode{
     background-color: #111;
     height: 26px;
     width: 50px;
+    justify-content: space-between;
+    position: relative;
     display: flex;
     border-radius: 50px;
+    align-items: center;
+    padding: 8px;
 }
+.entregas{
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin-left: 10px;
+    font-size: 10px;
+    justify-content: space-be;
+}
+.bola{
+    position: absolute;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+}
+
 ul, li,  p{
     margin: 0px;
     padding: 0px;

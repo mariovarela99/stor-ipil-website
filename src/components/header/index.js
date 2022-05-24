@@ -7,25 +7,24 @@ const Header = () => {
     <header>
       <nav class="header_info">
         <p>StorIPIL - All rights reserved | <a>storipil@gmail.com</a></p>
-        <p>
-          <p>
-            Entregas gratuitas ao IPIL
-          </p>
-          <span class="darkmode">
-            <div>
-              <input type="checkbox" class="checkbox"/>
+          <p class="entregas">
+            <p>
+              Entregas gratuitas ao IPIL | +244 951 045 990 ou +244 940 245 416 |
+            </p>
+            <span>
+            <div class="darkmode">
               <label for="checkbox" class="label_mode">
               <i class="fa-regular fa-moon"></i>
-              <i class="fa-regular fa-sun-bright"></i>
-              <div class="ball"></div>
+              <i class="fa-regular fa-sun"></i>
+              <div class="bola"></div>
               </label>
             </div>
           </span>
-        </p>
+          </p>
       </nav>
       <nav class="header_nav">
       <a href="">Logo</a>
-      <ul class="menu">
+      <ul class="menu topnav">
         <li>
           <a href=""><i class="fa-solid fa-house"></i> Home</a>
         </li>
