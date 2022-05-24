@@ -6,13 +6,17 @@ const Header = () => {
   return (<>
     <header>
       <nav class="header_info">
-        <p></p>
+        <p>StorIPIL - All rights reserved | <a>storipil@gmail.com</a></p>
         <p>
-          <span>
+          <p>
+            Entregas gratuitas ao IPIL
+          </p>
+          <span class="darkmode">
             <div>
               <input type="checkbox" class="checkbox"/>
               <label for="checkbox" class="label_mode">
-              <i class="fa-solid fa-brightness"></i>
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun-bright"></i>
               <div class="ball"></div>
               </label>
             </div>
