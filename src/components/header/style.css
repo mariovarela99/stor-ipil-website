@@ -1,2 +1,77 @@
-.header {
+@import url(https://kit.fontawesome.com/355f5085ba.js);
+
+
+.label{
+    background-color: #111;
+    height: 26px;
+    width: 50px;
 }
+ul, li,  p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: Arial;
+}
+a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_nav{
+    background-color: #1d1e20;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 30px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+.btn-group .fav {
+    background-color: #1d1e20;
+    border: 1px solid rgb(255, 168, 37);
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px 0px 0px 10px;
+    float: left;
+  }
+  .btn-group .lista {
+    background-color: #1d1e20;
+    border: 1px solid rgb(255, 168, 37);
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 0px 10px 10px 0px;
+    float: left;
+  }
+  
+  .btn-group .lista:not(:last-child),.btn-group .fav:not(:last-child){
+    border-right: none; 
+  }
+  
+  .btn-group .lista:hover, .btn-group .fav:hover {
+    background-color: #ffae00dc;
+  }
