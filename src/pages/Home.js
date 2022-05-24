@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Header />
       {/* <CardProduto /> */}
-      {/* <Banner /> */}
+      <Banner />
       {/* <Footer /> */}
     </div>
   );
