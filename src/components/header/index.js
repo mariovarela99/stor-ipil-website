@@ -1,70 +1,73 @@
 import React from "react";
-import "./style.css";
-import "https://kit.fontawesome.com/355f5085ba.js";
+import { Link } from "react-router-dom";
+import { DownHeader, HeaderTag, MainHeader, SubHeader } from "./style";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
   return (
     <>
-      <header>
-        <nav class="header_info">
-          <p>
-            StorIPIL - All rights reserved |
-            <a href="mailto:storipil@gmail.com">storipil@gmail.com</a>
-          </p>
-          <p>
-            <p>Entregas gratuitas ao IPIL</p>
-            <span class="darkmode">
-              <div>
-                <input type="checkbox" class="checkbox" />
-                <label for="checkbox" class="label_mode">
-                  <i class="fa-regular fa-moon" />
-                  <i class="fa-regular fa-sun-bright" />
-                  <div class="ball"></div>
-                </label>
-              </div>
-            </span>
-          </p>
-        </nav>
-        <nav class="header_nav">
-          <a href="/">Logo</a>
-          <ul class="menu">
-            <li>
-              <a href="/">
-                <i class="fa-solid fa-house" /> Home
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i class="fa-solid fa-bag-shopping" /> Produtos
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i class="fa-solid fa-wand-magic-sparkles" /> Novos
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i class="fa-solid fa-ranking-star" /> Destaques
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i class="fa-solid fa-award" /> Promoções
-              </a>
-            </li>
-            <li>
-              <a href="/">
-                <i class="fa-solid fa-tags" /> Mais vendidos
-              </a>
-            </li>
-          </ul>
-          <div class="btn-group">
-            <button class="fav">Favoritos</button>
-            <button class="lista">Lista de desejos</button>
+      <HeaderTag>
+        <SubHeader className="subHeader">
+          <div>
+            <p>StorIpil - All Rights Reserved</p> <span className="line"></span>
+            <a href="mailto:storipil@info.com">storipil@info.com</a>
           </div>
-        </nav>
-      </header>
+          <div>
+            <p>Entregas Gratuitas ao IPIl</p> <span className="line"></span>
+            <p>
+              <a href="tel:+244951045990"> +244 951 045 990 </a>
+              ou
+              <a href="tel:+244940245416"> +244 940 245 416 </a>
+            </p>
+          </div>
+        </SubHeader>
+
+        <MainHeader className="mainHeader">
+          <picture>
+            <img src="./" alt="Logo" />
+          </picture>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/"> Home </Link>
+              </li>
+              <li>
+                <Link to="/"> Produtos </Link>
+              </li>
+              <li>
+                <Link to="/"> Novos </Link>
+              </li>
+              <li>
+                <Link to="/"> Destaques </Link>
+              </li>
+              <li>
+                <Link to="/"> Promoções </Link>
+              </li>
+              <li>
+                <Link to="/"> Mais vendidos </Link>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <button type="button">Favoritos</button>
+            <button type="button">Lista de Desejos</button>
+          </div>
+        </MainHeader>
+
+        <DownHeader>
+          <select>
+            <option value="null"> Categorias </option>
+          </select>
+          <input type="search" placeholder="Procurar..." />
+          <div>
+            <Link to="/cart">
+              <span>Carrinho</span>
+              <FaShoppingCart fontSize={18} color="#ffffff" />
+              <span> {1} </span> Item(s)
+            </Link>
+          </div>
+        </DownHeader>
+      </HeaderTag>
     </>
   );
 };
