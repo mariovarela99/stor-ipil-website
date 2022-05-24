@@ -10,7 +10,7 @@ const Login = () => {
           <input type="number" id="password" placeholder="Password"></input>
           <button>Iniciar Sessão</button>
           <a href="" class="forgetlink">Esqueceu-se da Password?</a>
-          <div class="line"></div>
+          <div class="line_login"></div>
           <div class="accountlink">
           <span>Não tem uma conta?</span>
            <a href="" >Crie uma conta</a>
