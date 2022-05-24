@@ -5,13 +5,16 @@ const Login = () => {
   return( <>
   <div class="main">
       <div class="container_form">
-          <h1>Login</h1>
+          <h2>Login</h2>
           <input type="text" id="name" placeholder="Email or Username"></input>
           <input type="number" id="password" placeholder="Password"></input>
           <button>Iniciar Sessão</button>
-          <a href="">Esqueceu-se da Password?</a>
+          <a href="" class="forgetlink">Esqueceu-se da Password?</a>
+          <div class="line"></div>
+          <div class="accountlink">
           <span>Não tem uma conta?</span>
-          <a href="">Clique Aqui</a>
+           <a href="" >Crie uma conta</a>
+          </div>
       </div>
   </div>
   </>);
