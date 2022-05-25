@@ -1,6 +1,7 @@
 
 body{
 	line-height: 1.5;
+	
 }
 *{
 	margin:0;
@@ -10,19 +11,26 @@ body{
 .container{
 	max-width: 1170px;
 	margin:auto;
+	height: -60px;
 }
 .row{
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 10px;
+	
 }
 ul{
 	list-style: none;
 }
 .footer{
-	background-color: #727070;
+	background-color: #cecece;
     padding: 70px 0;
-	padding: 30px;
+	height: 50vh;
+	
+
+	width: 100%;
+	
+
 }
 .footer-coluna{
    width: 25%;
@@ -75,9 +83,14 @@ ul{
 	color:#FFA500;
 	
 }
+.footer .social-links{
+	width: 40px;
+	height: 40vh;
+
+}
 .footer_final{
 	text-align: center;
-display: block;
+	display: flex;
 }
 footer-
 .footer-coluna .social-links a:hover{

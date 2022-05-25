@@ -53,27 +53,20 @@ const Footer = () => {
             <div class="footer-coluna">
               <h4>Siga-Nos</h4>
               <div class="social-links">
-                <a href="/">
-                  <i class="fab fa-gmail"></i>
-                </a>{" "}
-                <p>storipil@gmail.com</p>
-                <a href="/">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <p>Stor Ipil</p>
-                <a href="/">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <p>@Storipil</p>
-                <a href="/">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <p>Storipil.Official</p>
+                <p>storipil@gmail.com</p> <br></br>
+                
+                <p>Stor Ipil</p> <br></br>
+
+                <p>@Storipil</p><br></br>
+                
+                <p>Storipil.Official</p><br></br>
+
               </div>
+			  <br></br>
             </div>
             <div class="footer_final">
               <p>
-                <a href="/">@StoriPil -All rights reserved.</a>{" "}
+                <a href="/">@StoriPil -All rights reserved.</a>
               </p>
             </div>
           </div>
