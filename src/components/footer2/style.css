@@ -1,17 +1,15 @@
-body{
-    background-color: #c4c4c4;
-}
 .contentor {
     display:flex;
     align-items:center;
     border: none;
     justify-content: center;
     margin-top: 10%;
-    margin-left: 5%;
+    background-color: #c4c4c4;
 }
 .contactos{
     display:flex;
     margin-left: 20px;
+    margin-bottom: 50px;
 }
 .novidades{
     display:inline;
@@ -19,9 +17,10 @@ body{
 }
 .divisao1{
     background-color: black;
-    width: 1.5px;
+    width: 0.5px;
     height:200px;
     margin-left: 50px;
+    margin-top: 10px;
 }
 .divisao2{
     background-color: black;
@@ -33,14 +32,21 @@ body{
 h2{
     color: rgb(223, 145, 0);
 }
-input{
-    width: 250px;
+.contactar{
+    width: 150px;
+    height: 25px;
+    
+}
+.novas{
+    width: 150px;
     height: 25px;
 }
 .email{
     border:none;
     border-radius: 5px;
-    background-color:white ;
+    background-color:white;
+    width: 196px;
+    height: 23px;
 }
 .botao{
     background-color:rgb(223, 145, 0);
@@ -48,7 +54,8 @@ input{
     border: none;
     border-radius: 5px;
     text-align: left;
-    width: 255px;
+    width: 200px;
+    height: 23px;
 }
 .botao:hover{
     cursor: pointer;

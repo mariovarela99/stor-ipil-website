@@ -14,7 +14,7 @@ const Footer2 = () => {
           </div> 
         <div class="contactos">
           <div class="contactos2">
-            <h2>Contacte-nos</h2>
+            <h2 class="contactar">Contacte-nos</h2>
               <table>
               <tr>
                 <td>storipil@gmail.com</td>
@@ -40,7 +40,7 @@ const Footer2 = () => {
             <hr/>
           </div>
         <div class="novidades">
-          <h2>News-letter</h2>
+          <h2 class="novas">News-letter</h2>
           <input type="email" placeholder="Digite o teu email" name="newsletter" class="email"/><br/> <br/>
           <input type="button" value="SUBSCREVER" name="subscrever" class="botao"/>
           <p>Vai receber emails sobre promoções, artigos e mudanças<br/>
