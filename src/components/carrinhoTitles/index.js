@@ -5,14 +5,14 @@ function CarrinhoTitles(){
     return(
         <>
             <div className="carrinho-titles">
-                    <ul>
-                        <li className="image">Imagem</li>
-                        <li className="desc">Descrição</li>
-                        <li className="price">Preço Unitário</li>
-                        <li className="quantity">Quantidade</li>
-                        <li className="totally">Total</li>
-                        <li className="delete">Delete</li>
-                    </ul>
+                    <div>
+                        <div className="image">Imagem</div>
+                        <div className="desc">Descrição</div>
+                        <div className="price">Preço Unitário</div>
+                        <div className="quantity">Quantidade</div>
+                        <div className="totally">Total</div>
+                        <div className="delete">Delete</div>
+                    </div>
             </div>
         </>
     )

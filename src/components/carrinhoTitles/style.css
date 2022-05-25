@@ -1,18 +1,16 @@
 .carrinho-titles {
-    margin: 10px auto 10px -35px;
-    padding: 15px 25px 15px 0;
-    background: #F0F0F0;
+    margin: 10px auto 30px;
+    padding: 10px 20px;
+    background: #e2e2e2;
     border-radius: 13px;
-    background: black;
-
 }
-.carrinho-titles ul {
+.carrinho-titles div {
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.carrinho-titles ul li {
+.carrinho-titles div div{
     padding: 0;
     color: #000000;
     font-family: 'Roboto';
@@ -20,27 +18,25 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
+
+    margin: 0 15px 0 0;
+    display: flex;
+    justify-content: center;
 }
 .carrinho-titles .image {
     width: 15%;
-    background: red;
 }
 .carrinho-titles .desc {
     width: 40%;
-    background: yellow;
 }.carrinho-titles .price {
     width: 15%;
-    background: red;
 }
 .carrinho-titles .quantity {
     width: 10%;
-    background: yellow;
 }
 .carrinho-titles .totally {
     width: 15%;
-    background: red;
 }
 .carrinho-titles .delete {
     width: 15%;
-    background: yellow;
 }

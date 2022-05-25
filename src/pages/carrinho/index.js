@@ -1,40 +1,20 @@
 import React from "react"
 
 import CarrinhosTitles from "../../components/carrinhoTitles"
+import CarrinhoRegisto from "../../components/RegistoDeCarrinho"
 
 import productImage from "../../assets/Frame01.png"
-
+import "./style.css"
 function Carrinho(){
     return(
         <>
             <div className="carrinho">
-                <h2>SUMÁRIO DO CARRINHO DE COMPRAS</h2>
+                <h2 className="carrinho-title">SUMÁRIO DO CARRINHO DE COMPRAS</h2>
 
-                <ul>
+                <div>
                     <CarrinhosTitles />
-                    <ul>
-                        <li>
-                            <div className="product-image image"><img src="" alt="" /> </div>
-                            <div className="proct-info desc">
-                                <h3>Nome do produto</h3>
-
-                                <p>Computador básico, muito foda, granda mambo, pode comprar
-                                    vais gostar bwe, dá para assistir lá filme em 6D ...
-                                </p>
-                            </div>
-                            <div className="product-price price">
-                                <p>250.000,00kz</p>
-                            </div>
-                            <div className="product-quantity quantity">
-                                <div>
-                                    <button>-</button><span>1</span><button>+</button>
-                                </div>
-                            </div>
-                            <div className="product-totally totally"><p>250.000,00kz</p></div>
-                            <div className="product-delete delete"></div>
-                        </li>
-                    </ul>
-                </ul>
+                    <CarrinhoRegisto />
+                </div>
             </div>
         </>
     )
