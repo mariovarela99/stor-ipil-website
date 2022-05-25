@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
             <div class="footer_final">
               <p>
-                <a>@StoriPil -All rights reserved.</a>{" "}
+                <a href="/">@StoriPil -All rights reserved.</a>{" "}
               </p>
             </div>
           </div>
