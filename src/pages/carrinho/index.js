@@ -4,6 +4,7 @@ import "./style.css"
 import CarrinhosTitles from "../../components/carrinhoTitles"
 import CarrinhoRegisto from "../../components/RegistoDeCarrinho"
 import CarrinhoTabela from "../../components/tabelaCalculoCarrionho"
+import BtnNext from "../../components/btnNext"
 
 import productImage from "../../assets/Frame01.png"
 function Carrinho(){
@@ -16,6 +17,7 @@ function Carrinho(){
                     <CarrinhosTitles />
                     <CarrinhoRegisto />
                     <CarrinhoTabela />
+                    <BtnNext />
                 </div>
             </div>
         </>
