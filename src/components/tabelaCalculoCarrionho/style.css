@@ -1,0 +1,22 @@
+.carrinho-tabela-calculo {
+    width: 400px;
+    background: #e6e6e6;
+    border-radius: 10px;
+    padding: 15px;
+}
+.carrinho-tabela-calculo table tr td {
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid #6a6a6a;
+    text-align: right;
+
+    font: bold 16px Roboto;
+}
+.carrinho-tabela-line-right {
+    border-right: 1px solid #6a6a6a;
+}
+.carrinho-tabela-calculo p {
+    text-align: right;
+    font: bold 14px Roboto;
+    color: #6a6a6a;
+}
