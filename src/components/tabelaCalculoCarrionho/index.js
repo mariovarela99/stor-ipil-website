@@ -8,7 +8,7 @@ function TabelaCalculoCarrinho(){
                 <table>
                     <tr>
                         <td className="carrinho-tabela-line-right">Total de Produtos</td>
-                        <td>5</td>
+                        <td>3</td>
                     </tr>
                     <tr>
                         <td className="carrinho-tabela-line-right">Total de valor</td>
