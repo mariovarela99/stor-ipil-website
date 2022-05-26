@@ -1,7 +1,7 @@
 import React from "react"
 import "./style.css"
 
-import pub01 from "../../assets/pub01.png"
+import pub01 from "../../assets/pub.jpg"
 
 function CarrinhoPub(){
     return(

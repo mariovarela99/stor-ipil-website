@@ -16,12 +16,12 @@ function Carrinho(){
 
                 <div>
                     <CarrinhosTitles />
-                    <CarrinhoRegisto />
+                    <CarrinhoRegisto/>
                     <div className="row">
                         <CarrinhoPub />
                         <CarrinhoTabela />
                     </div>
-                    <BtnNext />
+                    <BtnNext content={"Seguinte"}/>
                 </div>
             </div>
         </>
