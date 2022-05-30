@@ -5,6 +5,7 @@ import CardProduto from "../../components/cardProduto1";
 import Banner from "../../components/banner";
 import { CardsContainer } from "./style";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import itemCarrinho from "../../components/itemCarrinho";
 
 function Home() {
   return (

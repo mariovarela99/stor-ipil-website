@@ -4,7 +4,7 @@ import Cart from "../pages/Cart";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Cadastro from "../pages/Cadastro";
-import ProductInfo from "../pages/Product";
+import ProductInfo from "../pages/ProductInfo";
 
 function Routing() {
   return (
