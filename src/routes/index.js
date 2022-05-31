@@ -16,6 +16,8 @@ function Routing() {
         <Route path="/" element={<Home />} />
         <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/product-details" element={<ProductDetails />} />
+        <Route path="/"exact element={<Home />} />
+        <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/carrinho" element={<Cart />} />

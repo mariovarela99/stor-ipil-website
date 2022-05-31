@@ -46,6 +46,7 @@
 .carrinho-registo .carrinho-registo-list .delete {
     width: 15%;
     height: 100px;
+    color: red;
 
 }
 .carrinho-registo .carrinho-registo-list div {
