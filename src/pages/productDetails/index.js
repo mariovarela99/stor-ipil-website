@@ -1,6 +1,7 @@
 import React from "react"
 import "./style.css"
 
+import Header from "../../components/header"
 import BtnAction from "../../components/btnNext"
 import ListFrame from "../../components/listFrame"
 
@@ -8,6 +9,7 @@ import frame01 from "../../assets/Frame01.png"
 function ProductDetail(){
     return(
         <>
+            <Header />
             <div className="product-details">
                 <div className="images-side">
                     <div className="product-details-main-img">
