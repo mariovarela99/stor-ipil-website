@@ -24,7 +24,7 @@ function Carrinho(){
                         <CarrinhoTabela />
                     </div>
                     <BtnNext />
-                </div>
+                </div> 
             </div>
         </>
     )
