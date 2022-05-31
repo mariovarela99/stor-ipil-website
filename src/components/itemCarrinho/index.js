@@ -3,33 +3,31 @@ import "./style.css";
 import OIP from "./OIP.png";
 import icon from "./delete_regular.png";
 
-const itemCarrinho = () => {
+const ItemCarrinho = () => {
   return (<>
   <div class="main_item">
-    <div>
-        <img src={OIP}/>
-    </div>
-    <div class="bg_desc">
-        <div class="descriptions">
-            <h2>Computador Portátil HP - RAM 4GB - 1 TB de SSD</h2>
-            <p>Computador básico, muito foda, granda mambo, pode comprar
-            vais gostar bwe, dá para assistir lá filme em 6D ...</p>
+        <div class="img_container">
+            <img src={OIP}/>
         </div>
-        <div class="prices">
+        <div class="bg_desc">
+            <div class="descriptions">
+                <h3>Computador Portátil HP - RAM 4GB - 1 TB de SSD</h3>
+                <p>Computador básico, muito foda, granda mambo, pode comprar <br/>
+                vais gostar bwe, dá para assistir lá filme em 6D ...</p>
+            </div>
             <h3>250.000, 00 Kzs</h3>
+            <div class="increment_btns">
+                <button class="increment_btn" > - </button>
+                <p>1</p>
+                <button class="increment_btn"> + </button>
+            </div>
+            <div class="prices">
+                <h3>250.000, 00 Kzs</h3>
+                <button class="btn_delet"><img src={icon}/></button>
+            </div>
         </div>
-    </div>
-    <div class="increment_btn">
-        <button class="increment_btn" > - </button>
-        <p>1</p>
-        <button class="increment_btn"> + </button>
-    </div>
-    <div class="prices">
-        <h3>250.000, 00 Kzs</h3>
-        <img src={icon}/>
-    </div>
   </div>
   </>);
 };
 
-export default itemCarrinho;
+export default ItemCarrinho;

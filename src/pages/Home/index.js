@@ -5,7 +5,7 @@ import CardProduto from "../../components/cardProduto1";
 import Banner from "../../components/banner";
 import { CardsContainer } from "./style";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import itemCarrinho from "../../components/itemCarrinho";
+import ItemCarrinho from "../../components/ItemCarrinho";
 
 function Home() {
   return (
@@ -30,6 +30,7 @@ function Home() {
         </div>
       </CardsContainer>
       {/* <Footer /> */}
+      <ItemCarrinho/>
     </div>
   );
 }
