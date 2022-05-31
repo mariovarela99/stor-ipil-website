@@ -1,0 +1,71 @@
+.frame {
+    position: relative;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .3s ease-in;
+}
+.frame:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #0000007c;
+}
+.frame .frame-image{
+    width: 180px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame-horizontal-line{
+    min-width: 200px;
+    min-height: 1px;
+    margin: 0 0 15px 0;
+    background: black;
+}
+.frame .frame-image img {
+    width: 100%;
+}
+
+.frame h3 {
+    width: 180px;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+}
+.frame p {
+    color: #FFA500;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 5px;
+}
+.frame .btn-buy {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    padding: 5px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.frame .btn-buy img {
+    width: 40px;
+}
