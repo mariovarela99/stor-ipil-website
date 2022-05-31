@@ -18,13 +18,13 @@ function Carrinho(){
 
                 <div>
                     <CarrinhosTitles />
-                    <CarrinhoRegisto />
+                    <CarrinhoRegisto/>
                     <div className="row">
                         <CarrinhoPub />
                         <CarrinhoTabela />
                     </div>
-                    <BtnNext />
-                </div> 
+                    <BtnNext content={"Seguinte"}/>
+                </div>
             </div>
         </>
     )

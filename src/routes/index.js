@@ -6,12 +6,16 @@ import Cadastro from "../pages/Cadastro";
 import ProductInfo from "../pages/Product";
 import Home from "../pages/Home";
 import Carrinho from "../pages/carrinho";
+import ProductDetails from "../pages/productDetails";
 
 
 function Routing() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="/product-details" element={<ProductDetails />} />
         <Route path="/"exact element={<Home />} />
         <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/login" element={<Login />} />
