@@ -1,0 +1,36 @@
+.marcas {
+    width: 100%;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.marcas h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.18px;
+    margin-bottom: 30px;
+    color: #484848;
+}
+.marcas .marca-container ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.marcas .marca-container ul li {
+    margin: 0 30px;
+}
+.marcas .marca-container ul img {
+    width: 116px;
+    height: 116px;
+    margin: 15px 20px;
+    transition: all .3s ease;
+}
+.marcas .marca-container ul img:hover{
+    width: 121px;
+    height: 121px;
+    margin: 10px 25px;
+}
