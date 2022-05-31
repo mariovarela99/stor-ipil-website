@@ -1,2 +1,37 @@
 .newsletter {
+    width: 100%;
+    padding: 30px;
+    margin: 15px 0;
+}
+
+.newsletter h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: left;
+    color: #484848;
+    margin-bottom: 5px;
+}
+
+.newsletter p {
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    color: #484848;
+}
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+.newsletter div input {
+    width: 70%;
+    height: 50px;
+    padding: 5px 15px;
+    background: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
 }
