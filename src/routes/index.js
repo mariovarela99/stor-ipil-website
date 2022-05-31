@@ -5,12 +5,15 @@ import Login from "../pages/Login";
 import Cadastro from "../pages/Cadastro";
 import ProductInfo from "../pages/Product";
 import Home from "../pages/Home";
+import Carrinho from "../pages/carrinho";
+
 
 function Routing() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/"exact element={<Home />} />
+        <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/carrinho" element={<Cart />} />

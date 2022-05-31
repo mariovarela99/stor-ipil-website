@@ -1,0 +1,119 @@
+.carrinho-registo {
+    width: 100%;
+    box-sizing: border-box;
+}
+.carrinho-registo .carrinho-registo-list {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #00000058;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.carrinho-registo .carrinho-registo-list  div {
+    margin: 10px;
+}
+.carrinho-registo .carrinho-registo-list .image {
+    width: 15%;
+    height: 100px;
+    box-shadow: 0 0 10px #000;
+    border-radius: 15px;
+}
+.carrinho-registo .carrinho-registo-list .desc {
+    width: 40%;
+    height: 100px;
+
+}.carrinho-registo .carrinho-registo-list .price {
+    width: 15%;
+    height: 100px;
+}
+.carrinho-registo .carrinho-registo-list .quantity {
+    width: 10%;
+    height: 100px;
+
+}
+.carrinho-registo .carrinho-registo-list .totally {
+    width: 15%;
+    height: 100px;
+}
+.carrinho-registo .carrinho-registo-list .delete {
+    width: 15%;
+    height: 100px;
+    color: red;
+
+}
+.carrinho-registo .carrinho-registo-list div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrinho-registo .carrinho-registo-list .image img {
+    width: 100px;
+}
+.carrinho-registo .carrinho-registo-list .desc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.carrinho-registo .carrinho-registo-list .desc  p, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-style: normal;
+
+}
+.carrinho-registo .carrinho-registo-list .desc  h3 {
+    color: #000000;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+}
+.carrinho-registo .carrinho-registo-list .desc p {
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #686868;
+}
+.carrinho-registo .carrinho-registo-list .price p, .carrinho-registo .carrinho-registo-list .totally p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+} 
+.carrinho-registo .carrinho-registo-list .quantity div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFA500;
+    color: #ffffff;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.carrinho-registo .carrinho-registo-list .quantity div button {
+    background: transparent;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+
+    padding: 10px 15px;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.carrinho-registo .carrinho-registo-list .quantity div button:hover {
+    border: 1px solid #686868;
+}
+.carrinho-registo .carrinho-registo-list .quantity div span {
+    margin: 0 5px;
+}

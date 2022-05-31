@@ -1,15 +1,14 @@
 import React from "react"
 import "./style.css"
 
-import frame01 from "../../assets/Frame01.png"
 import btnHand from "../../assets/hand.png"
 
-function Frame(){
+function Frame({image}){
     return(
         <>
             <div className="frame">
                 <div className="frame-image">
-                    <img src={frame01} alt="Frame" />
+                    <img src={image} alt="Frame" />
                 </div>
                 <div className="frame-horizontal-line"></div>
                 <h3>Asus Portátil Gaming TUF Gaming F15 TUF506LH-HN218 15.6´´ i5-1030...</h3>
