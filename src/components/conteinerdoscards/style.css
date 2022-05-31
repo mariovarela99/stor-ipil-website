@@ -1,16 +1,49 @@
-.grid-container {
-  display: grid;
-  height: 400px;
-  align-content: center;
-  grid-template-columns: auto auto auto;
-  gap: 10px;
-  background-color: #000000;
-  padding: 10px;
+.container-dos-cards {
+  width: 100%;
+  padding: 30px 30px;
 }
-
-.grid-container > div {
-  background-color: rgb(223, 223, 223);
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  color: #484848;
+}
+.container-dos-cards .container-row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.container-dos-cards .container-row .container-pub {
+  width: 300px;
+  height: 400px;
+  padding: 30px 0;
+  margin: 20px 0;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 15px;
+}
+.container-dos-cards .container-row .container-pub a {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 4px #000000;
+  padding: 10px;
+  font-size: 18px;
+}
+.container-dos-cards .container-row ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+.container-dos-cards .container-row  h2 {
+  text-align: left !important;
+  margin-top: 10px;
 }
