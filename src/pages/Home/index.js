@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header";
 import CardProduto from "../../components/cardProduto1";
 import Banner from "../../components/banner";
+import CardMaisVendidos from "../../components/conteinerdoscards"
 import { CardsContainer } from "./style";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
@@ -27,6 +28,7 @@ function Home() {
           </button>
         </div>
       </CardsContainer>
+      <CardMaisVendidos />
     </div>
   );
 }

@@ -8,6 +8,7 @@ import frame03 from "../../assets/frame03.jpg"
 import frame04 from "../../assets/frame04.jpg"
 
 import btnAvancar from "../../assets/btn-avançar.png"
+
 function ListFrame({quantity}){
     const [listframes, setListFrames] = useState([frame01, frame02, frame03, frame04]);
     return(
