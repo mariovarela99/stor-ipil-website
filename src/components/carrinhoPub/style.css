@@ -1,5 +1,6 @@
 .carrinho-pub {
-    width: 500px;
+    width: 600px;
+    height:150px;
     display: flex;
     justify-content: right;
     align-items: flex-start;

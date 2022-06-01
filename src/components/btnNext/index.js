@@ -1,10 +1,10 @@
 import React from "react"
 import "./style.css"
 
-function btnNext(){
+function btnNext({content}){
     return(
         <div className="btn-next">
-            <button>Seguinte</button>
+            <button>{content} </button>
         </div>
     )
 }

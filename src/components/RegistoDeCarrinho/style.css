@@ -2,6 +2,11 @@
     width: 100%;
     box-sizing: border-box;
 }
+.carrinho-container{
+    padding: 5px 0 0;
+    max-height: 100vh;
+    overflow: auto;
+}
 .carrinho-registo .carrinho-registo-list {
     width: 100%;
     height: 100px;

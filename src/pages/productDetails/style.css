@@ -1,0 +1,138 @@
+.product-details {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.images-side {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 30px;
+}
+.images-side div {
+    padding: 10px;
+    background: #ccc;
+    border-radius: 10px;
+}
+.images-side div img {
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+.product-details-main-img {
+    width: 400px;
+    height: 400px;
+    margin-right: 15px;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-details-main-img img {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+
+}
+
+.product-details-sec-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.product-details-sec-img img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.info-side {
+    width: 500px;
+}
+.info-side h2 {
+    color: #222;
+    font: bold 35px Roboto;
+    text-align: center;
+    margin: 0;
+}
+.info-side p {
+    margin: 0;
+}
+.info-side .product-details-reference{
+    width: 100%;
+    padding: 15px 0;
+    margin: 15px 0;
+    border-bottom: 1px solid #FFA500;
+}
+.info-side .product-details-reference h3 {
+    color: #a9a9a9;
+    font: bold 15px Roboto;
+}
+.info-side .product-details-reference span {
+    color: #222;
+    font: normal 15px Roboto;
+}
+
+.info-side .product-details-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-end;
+}
+.info-side .product-details-price h2 {
+    color: #FFA500;
+    font-size: 50px;
+    margin: 30px 0;
+}
+.info-side .product-details-price p {
+    color: #a9a9a9;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-details .info-side .actions-side{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product-details .info-side .actions-side .quantity{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFA500;
+    color: #ffffff;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.product-details .info-side .actions-side .quantity button {
+    background: transparent;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+
+    padding: 10px 25px;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.product-details .info-side .actions-side .quantity button:hover {
+    border: 1px solid #686868;
+}
+.product-details .info-side .actions-side .quantity span {
+    margin: 0 5px;
+}
+
+h2.title {
+    text-align: center;
+    margin: 35px 0 5px;
+    font: bold 30px Roboto;
+}
