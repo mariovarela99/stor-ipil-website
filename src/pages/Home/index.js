@@ -7,6 +7,7 @@ import Newsletter from "../../components/newsletter"
 import Marcas from "../../components/marcas"
 import { CardsContainer } from "./style";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import Footer from "../../components/footer1";
 
 function Home() {
   return (
