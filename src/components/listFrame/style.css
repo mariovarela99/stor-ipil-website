@@ -37,3 +37,6 @@
 .list-frame .btn-voltar {
     transform: rotate(180deg);
 }
+.list-frame .frame {
+    width: 200px;
+}
