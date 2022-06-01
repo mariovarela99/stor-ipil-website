@@ -22,14 +22,13 @@ h2 {
   height: 400px;
   padding: 30px 0;
   margin: 20px 0;
-  background: red;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   margin-right: 15px;
 }
 .container-dos-cards .container-row .pro01 {
-  background: url(../../assets/propaganda01.jpg) no-repeat;
+  background: url(../../assets/propaganda02.jpg) no-repeat;
   background-position: 100%;
   background-size: cover;
 }
