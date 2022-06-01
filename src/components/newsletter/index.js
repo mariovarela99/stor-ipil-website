@@ -10,7 +10,7 @@ const NewsLetter = () => {
       <p>Receba ofertas exclusivas e novidades que irão alegrar o seu dia!</p>
       <div>
         <input type="email" placeholder="Digite o seu email" />
-        <Btn  />
+        <Btn content={"SUBSCREVER"} />
       </div>
     </div>
   );
