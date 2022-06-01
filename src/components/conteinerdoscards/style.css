@@ -28,12 +28,27 @@ h2 {
   align-items: flex-end;
   margin-right: 15px;
 }
+.container-dos-cards .container-row .pro01 {
+  background: url(../../assets/propaganda01.jpg) no-repeat;
+  background-position: 100%;
+  background-size: cover;
+}
+.container-dos-cards .container-row .pro02 {
+  background: url(../../assets/propaganda02.jpg) no-repeat;
+  background-position: 100%;
+  background-size: cover;
+}
 .container-dos-cards .container-row .container-pub a {
   background: #ffffff;
   border-radius: 30px;
   box-shadow: 0px 0px 4px #000000;
   padding: 10px;
   font-size: 18px;
+  transition: all .3s ease-in;
+}
+.container-dos-cards .container-row .container-pub a:hover{
+  background: #ffa500;
+  color: #ffffff;
 }
 .container-dos-cards .container-row ul {
   list-style: none;

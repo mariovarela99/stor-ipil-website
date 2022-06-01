@@ -16,7 +16,7 @@ const Conteiner = () => {
     <div className="container-dos-cards">
       <h2>Selecionamos para si</h2>
       <div className="container-row">
-        <div className="container-pub">
+        <div className="container-pub pro01">
           <a href="/">Saber mais</a>
         </div>
         <ul className="container-list-card">
@@ -26,7 +26,7 @@ const Conteiner = () => {
         </ul>
       </div>
       <div className="container-row">
-        <div className="container-pub">
+        <div className="container-pub pro02">
           <a href="/">Saber mais</a>
         </div>
         <div>

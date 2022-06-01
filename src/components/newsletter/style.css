@@ -29,6 +29,7 @@
 .newsletter div input {
     width: 70%;
     height: 45px;
+    margin-top: 10px;
     padding: 5px 15px;
     background: #ccc;
     border: 1px solid #ccc;

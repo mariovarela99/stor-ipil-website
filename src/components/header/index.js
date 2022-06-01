@@ -60,7 +60,7 @@ const Header = () => {
           </select>
           <input type="search" placeholder="Procurar..." />
           <div>
-            <Link to="/cart">
+            <Link to="/carrinho">
               <span>Carrinho</span>
               <FaShoppingCart fontSize={18} color="#ffffff" />
               <span> {1} </span> Item(s)
