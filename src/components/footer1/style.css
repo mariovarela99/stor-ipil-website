@@ -25,12 +25,8 @@ ul{
 .footer{
 	background-color: #cecece;
     padding: 70px 0;
-	height: 50vh;
-	
-
+	height: 400px;
 	width: 100%;
-	
-
 }
 .footer-coluna{
    width: 25%;
@@ -73,7 +69,7 @@ ul{
 }
 .footer-coluna .social-links a{
 	display: block;
-	height: 40px;
+	height: 100px;
 	width: 40px;
 	background-color: #5c5a5a;
 	margin:0 10px 10px 0;
@@ -92,6 +88,8 @@ ul{
 	text-align: center;
 	display: flex;
 	width: 100%;
+	
+
 }
 footer-
 .footer-coluna .social-links a:hover{
