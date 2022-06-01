@@ -3,7 +3,7 @@ import "./style.css"
 
 import CarrinhosTitles from "../../components/carrinhoTitles"
 
-import CarrinhoItem from "../carrinhoItem"
+import CarrinhoItem from "../"
 
 function RegistoDeCarrinho(){
     return(
