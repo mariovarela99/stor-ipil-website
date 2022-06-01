@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/header";
 import CardProduto from "../../components/cardProduto1";
 import Banner from "../../components/banner";
+import CardMaisVendidos from "../../components/conteinerdoscards"
 import Newsletter from "../../components/newsletter"
 import Marcas from "../../components/marcas"
 import { CardsContainer } from "./style";
@@ -29,9 +30,10 @@ function Home() {
           </button>
         </div>
       </CardsContainer>
+      <CardMaisVendidos />
       <Newsletter />
       <Marcas />
-    </div>
+    </div> 
   );
 }
 
