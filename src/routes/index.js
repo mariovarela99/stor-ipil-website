@@ -7,7 +7,7 @@ import ProductInfo from "../pages/Product";
 import Home from "../pages/Home";
 import Carrinho from "../pages/carrinho";
 import ProductDetails from "../pages/productDetails";
-
+import AllProduts from "../pages/AllProducts"
 
 function Routing() {
   return (
@@ -22,6 +22,7 @@ function Routing() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/product" element={<ProductInfo />} />
+        <Route path="/all-products" element={<ProductInfo />} />
         <Route path="*" element={<h1> Page Not Found </h1>} />
       </Routes>
     </BrowserRouter>
