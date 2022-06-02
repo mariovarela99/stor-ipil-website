@@ -34,6 +34,7 @@ function Home() {
       <CardMaisVendidos />
       <Newsletter />
       <Marcas />
+      <Footer />
     </div> 
   );
 }
