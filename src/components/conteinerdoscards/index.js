@@ -27,14 +27,14 @@ const Conteiner = () => {
       </div>
       <div className="container-row">
         <div className="container-pub pro02">
-          <a href="/">Saber mais</a>
+          <a href="/produc-details">Saber mais</a>
         </div>
         <div>
           <h2>Os mais vendidios</h2>
            <ul className="container-list-card">
             {
               listframes.map(item =>(
-                <a href="" >
+                <a href="/product-details" >
                   <li className="frame-item"><FrameItem image={item} /> </li>
                 </a>
               ))
