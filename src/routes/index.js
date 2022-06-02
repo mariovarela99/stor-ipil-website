@@ -22,7 +22,7 @@ function Routing() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/carrinho" element={<Cart />} />
         <Route path="/product" element={<ProductInfo />} />
-        <Route path="/all-products" element={<ProductInfo />} />
+        <Route path="/all-products" element={<AllProduts />} />
         <Route path="*" element={<h1> Page Not Found </h1>} />
       </Routes>
     </BrowserRouter>

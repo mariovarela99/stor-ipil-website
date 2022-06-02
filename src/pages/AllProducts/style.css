@@ -1,0 +1,14 @@
+.all-products {
+    width: 100%;
+    padding: 30px;
+}
+.all-products ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.all-products ul  li {
+    width: 250px;
+    margin:15px;
+}
