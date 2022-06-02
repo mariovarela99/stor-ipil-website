@@ -5,6 +5,7 @@ import "./style.css"
 
 import Header from "../../components/header"
 import CardProduto from "../../components/cardProduto1"
+import CounterPage from "../../components/counterPage"
 
 function AllProducts(){
     return(
@@ -54,6 +55,7 @@ function AllProducts(){
                         </Link>
                     </li>
                 </ul>
+                <CounterPage />
             </div>
         </>
         

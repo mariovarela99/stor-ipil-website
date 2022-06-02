@@ -1,0 +1,30 @@
+.counter-page {
+    padding: 30px;
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.counter-page  div {
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 15px;
+}
+.counter-page .counter-item {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.counter-page .counter-item  p {
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: #000000;
+}
+.counter-page .counter-item  p.active {
+    background: #ffa500;
+    color: #ffffff;
+}
+.counter-page .counter-item span, .counter-page .counter-item  p{
+    cursor: pointer;
+    font-weight: normal;
+}
