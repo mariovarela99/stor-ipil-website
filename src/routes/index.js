@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cart from "../pages/Cart";
 import Login from "../pages/Login";
 import Cadastro from "../pages/Cadastro";
-import ProductInfo from "../pages/Product";
+import ProductInfo from "../pages/ProductInfo";
 import Home from "../pages/Home";
 
 function Routing() {
