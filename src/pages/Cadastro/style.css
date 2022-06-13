@@ -53,3 +53,7 @@
     color: #ffa500;
     background: transparent;
 } 
+
+@media screen and (max-width: 500px){
+
+}
