@@ -1,0 +1,63 @@
+.cadastro {
+    width: 100%;
+    height: 100vh;
+    background: #c4c4c48f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-container {
+    width: 600px;
+    background: #ffffff;
+    padding: 30px 15px 45px;
+    border-radius: 30px;
+}
+
+.cadastro-container  h2 {
+    color: #514545;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    margin-bottom: 30px;
+}
+.cadastro-container div {
+    display: flex;
+}
+.cadastro-container input {
+    width: 50%;
+    margin: 10px;
+    padding: 10px 15px;
+    color: #514545;
+    background: #c4c4c48f;
+    border-radius: 5px;
+    border: 1px solid#c4c4c48f;
+}
+.cadastro .btn-create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.cadastro .btn-create-account button {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 90px;
+    border: 1px solid #ffa500;
+    border-radius: 10px;
+    background: #ffa500;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.cadastro .btn-create-account button:hover {
+    color: #ffa500;
+    background: transparent;
+} 
+
+@media screen and (max-width: 600px){
+    .cadastro-container {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+}
