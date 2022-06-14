@@ -11,17 +11,22 @@ function Cadastro(){
         password:"",
         cpassword:"",
     })
-    const [allUsers, setAllUsers] = useState([newUser]);
+    
+    const [allUsers, setAllUsers] = useState([{contact:""}]);    
 
-       
+    useEffect(
+        function getAllUsers(){
+            const dataFetch = JSON.parse(localStorage.getItem("stor-ipil-users")) || [{contact:""}];
+            setAllUsers(dataFetch);
+    },[])
 
     function AddUser(e){
         e.preventDefault();
 
-        if(newUser.name.length < 3 || newUser.surname.length < 3)
+        if(newUser.name.trim().length < 3 || newUser.surname.trim().length < 3)
         {
             window.alert("O nome e o apelido deve conter mais de 3 caracteres!")
-        }else if(newUser.nif.length < 6 || newUser.nif.length > 6)
+        }else if(newUser.nif.trim().length < 6 || newUser.nif.trim().length > 6)
         {
             window.alert("O NIF deve conter 6 caracteres!")
         }
@@ -32,21 +37,31 @@ function Cadastro(){
         {
             window.alert("A sua palavra passe deve conter no mínimo 6 caracteres!")
         }else{
-            let decision;
-            console.log(allUsers);
+            let decision = false;
+            
+            allUsers.forEach(element => {
+                if(element.contact === newUser.contact)
+                    decision = true;
+            });
+            if(decision)
+            {
+                console.log(allUsers);
+                alert("Usuário existente")
+            }else{
+                console.log(allUsers);
                 allUsers.push({
-                    name:newUser.name,
-                    surname:newUser.surname,
-                    contact:newUser.contact,
-                    nif:newUser.nif,
-                    password:newUser.password,
-                    cpassword:newUser.cpassword,
+                    name:newUser.name.trim(),
+                    surname:newUser.surname.trim(),
+                    contact:newUser.contact.trim(),
+                    nif:newUser.nif.trim(),
+                    password:newUser.password.trim(),
+                    cpassword:newUser.cpassword.trim(),
                 });
                 setAllUsers(allUsers);
-                localStorage.setItem("stor_ipil_users", allUsers.toString());
                 console.log(allUsers);
+                localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
                 window.alert("A sua conta foi criada com sucesso, obrigado.")
-            
+            }
         }
     }
 
