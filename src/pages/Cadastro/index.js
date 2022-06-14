@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react"
 import "./style.css"
 
+import ModalSuccessAuth from "../../components/ModalSucessAuth"
+
 function Cadastro(){
 
     const [newUser, setNewUser] = useState({
@@ -60,13 +62,14 @@ function Cadastro(){
                 setAllUsers(allUsers);
                 console.log(allUsers);
                 localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
-                window.alert("A sua conta foi criada com sucesso, obrigado.")
+                document.querySelector(".modal-success-auth").style.display = "flex";
             }
         }
     }
 
     return(
         <div className="cadastro">
+            <ModalSuccessAuth />
             <div className="cadastro-container">
                 <h2>Criar Conta</h2>
 
