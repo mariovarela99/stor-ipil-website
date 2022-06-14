@@ -15,18 +15,26 @@ const Login = () => {
   function hundleEnter(e){
     e.preventDefault();
 
-    let decision = false;
-
-    allUsers.forEach(item => {
-      if(item.contact === user.contact && item.password === user.password)
-        decision = true;
-    });
-
-    if(decision)
-      alert("Sessão iniciada com sucesso")
-    else  
-     alert("Conta não encontrada");
-  }
+    if(user.contact.trim().length < 1)
+        {
+            window.alert("O campo de Email deve ser preenchido")
+        }else if(user.password.trim().length < 6)
+        {
+            window.alert("A sua password deve conter no mínimo 6 caracteres!")
+        }else{
+          let decision = false;
+      
+          allUsers.forEach(item => {
+            if(item.contact === user.contact && item.password === user.password)
+              decision = true;
+          });
+      
+          if(decision)
+            alert("Sessão iniciada com sucesso")
+          else  
+           alert("Conta não encontrada");
+          }
+        }
 
   return (
     <>
@@ -34,7 +42,7 @@ const Login = () => {
         <div className="container_form">
           <h1>Login</h1>
           <input type="text" id="name" placeholder="Email or Username" onChange={(e)=>user.contact = e.target.value}></input>
-          <input type="number" id="password" placeholder="Password"  onChange={(e)=>user.password = e.target.value}></input>
+          <input type="text" id="password" placeholder="Password"  onChange={(e)=>user.password = e.target.value}></input>
           <button  onClick={(e)=>hundleEnter(e)}>Iniciar Sessão</button>
           <a href="/">Esqueceu-se da Password?</a>
           <span>Não tem uma conta?</span>
