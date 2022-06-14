@@ -44,7 +44,7 @@ function Cadastro(){
                     decision = true;
             });
             if(decision)
-            {
+            { 
                 console.log(allUsers);
                 alert("Usuário existente")
             }else{
