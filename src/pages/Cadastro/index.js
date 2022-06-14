@@ -11,9 +11,14 @@ function Cadastro(){
         password:"",
         cpassword:"",
     })
-    const [allUsers, setAllUsers] = useState([newUser]);
+    
+    const [allUsers, setAllUsers] = useState([]);    
 
-       
+    useEffect(
+        function getAllUsers(){
+            const dataFetch = JSON.parse(localStorage.getItem("stor-ipil-users"));
+            setAllUsers(dataFetch);
+    },[])
 
     function AddUser(e){
         e.preventDefault();
@@ -33,7 +38,15 @@ function Cadastro(){
             window.alert("A sua palavra passe deve conter no mínimo 6 caracteres!")
         }else{
             let decision;
-            console.log(allUsers);
+            
+            allUsers.forEach(element => {
+                if(element.contact !== newUser.contact)
+                    decision = true;
+                else
+                    decision = false;
+            });
+            if(decision){
+                console.log(allUsers);
                 allUsers.push({
                     name:newUser.name,
                     surname:newUser.surname,
@@ -43,10 +56,13 @@ function Cadastro(){
                     cpassword:newUser.cpassword,
                 });
                 setAllUsers(allUsers);
-                localStorage.setItem("stor_ipil_users", allUsers.toString());
                 console.log(allUsers);
+                localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
                 window.alert("A sua conta foi criada com sucesso, obrigado.")
-            
+            }else{
+                console.log(allUsers);
+                alert("Usuário existente")
+            }
         }
     }
 
