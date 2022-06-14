@@ -62,7 +62,7 @@ function Cadastro(){
                 setAllUsers(allUsers);
                 console.log(allUsers);
                 localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
-                window.alert("A sua conta foi criada com sucesso, obrigado.")
+                document.querySelector(".modal-success-auth").style.display = "flex";
             }
         }
     }
