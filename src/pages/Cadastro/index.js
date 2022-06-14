@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react"
 import "./style.css"
 
+import ModalSuccessAuth from "../../components/ModalSucessAuth"
+
 function Cadastro(){
 
     const [newUser, setNewUser] = useState({
@@ -67,6 +69,7 @@ function Cadastro(){
 
     return(
         <div className="cadastro">
+            <ModalSuccessAuth />
             <div className="cadastro-container">
                 <h2>Criar Conta</h2>
 
