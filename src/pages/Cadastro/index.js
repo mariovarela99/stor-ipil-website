@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState, useEffect} from "react"
 import "./style.css"
 
 function Cadastro(){
@@ -11,7 +11,9 @@ function Cadastro(){
         password:"",
         cpassword:"",
     })
-    const [allUsers, setAllUsers] = useState([]);
+    const [allUsers, setAllUsers] = useState([newUser]);
+
+       
 
     function AddUser(e){
         e.preventDefault();
@@ -31,15 +33,7 @@ function Cadastro(){
             window.alert("A sua palavra passe deve conter no mínimo 6 caracteres!")
         }else{
             let decision;
-            allUsers.forEach(element => {
-                if(element.contact === newUser.contact){
-                    decision = false;
-                }else{
-                    decision = true;
-                }
-
-            });
-            if(decision){
+            console.log(allUsers);
                 allUsers.push({
                     name:newUser.name,
                     surname:newUser.surname,
@@ -49,12 +43,10 @@ function Cadastro(){
                     cpassword:newUser.cpassword,
                 });
                 setAllUsers(allUsers);
-                localStorage.setItem("stor_ipil_users", allUsers);
+                localStorage.setItem("stor_ipil_users", allUsers.toString());
                 console.log(allUsers);
                 window.alert("A sua conta foi criada com sucesso, obrigado.")
-            }else{
-                window.alert("Usuário existente, entre na sua conta!")
-            }
+            
         }
     }
 
