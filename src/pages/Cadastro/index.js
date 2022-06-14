@@ -54,16 +54,16 @@ function Cadastro(){
 
                 <form action="">
                     <div>
-                        <input type="text" placeholder="Primeiro nome" onChange={(e)=>newUser.name = e.target.value} />
-                        <input type="text" placeholder="Apelido" onChange={(e)=>newUser.surname = e.target.value} />
+                        <input type="text" placeholder="Primeiro nome" onChange={(e)=>newUser.name = e.target.value} required/>
+                        <input type="text" placeholder="Apelido" onChange={(e)=>newUser.surname = e.target.value} required/>
                     </div>
                     <div>
-                        <input type="text" placeholder="NIF" onChange={(e)=>newUser.nif = e.target.value} />
-                        <input type="text" placeholder="Email ou Username" onChange={(e)=>newUser.contact = e.target.value} />
+                        <input type="text" placeholder="NIF" onChange={(e)=>newUser.nif = e.target.value} required/>
+                        <input type="text" placeholder="Email ou Username" onChange={(e)=>newUser.contact = e.target.value} required/>
                     </div>
                     <div>
-                        <input type="password" placeholder="Palavra-Passe" onChange={(e)=>newUser.password = e.target.value} />
-                        <input type="password" placeholder="Confirmar Palavra-Passe" onChange={(e)=>newUser.cpassword = e.target.value} />
+                        <input type="password" placeholder="Palavra-Passe" onChange={(e)=>newUser.password = e.target.value} required/>
+                        <input type="password" placeholder="Confirmar Palavra-Passe" onChange={(e)=>newUser.cpassword = e.target.value} required/>
                     </div>
                     <div className="btn-create-account">
                         <button onClick={e=>mostre(e)}>Criar Conta</button>
