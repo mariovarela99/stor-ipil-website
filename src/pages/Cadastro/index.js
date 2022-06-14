@@ -13,7 +13,7 @@ function Cadastro(){
     })
     const [allUsers, setAllUsers] = useState([]);
 
-    function mostre(e){
+    function AddUser(e){
         e.preventDefault();
 
         if(newUser.name.length < 3 || newUser.surname.length < 3)
@@ -30,21 +30,32 @@ function Cadastro(){
         {
             window.alert("A sua palavra passe deve conter no mínimo 6 caracteres!")
         }else{
-            allUsers.push({
-                name:newUser.name,
-                surname:newUser.surname,
-                contact:newUser.contact,
-                nif:newUser.nif,
-                password:newUser.password,
-                cpassword:newUser.cpassword,
-            });
-            setAllUsers(allUsers);
-            localStorage.setItem("stor_ipil_users", allUsers);
-            console.log(allUsers);
-            window.alert("A sua conta foi criada com sucesso, obrigado.")
+            let decision;
+            allUsers.forEach(element => {
+                if(element.contact === newUser.contact){
+                    decision = false;
+                }else{
+                    decision = true;
+                }
 
+            });
+            if(decision){
+                allUsers.push({
+                    name:newUser.name,
+                    surname:newUser.surname,
+                    contact:newUser.contact,
+                    nif:newUser.nif,
+                    password:newUser.password,
+                    cpassword:newUser.cpassword,
+                });
+                setAllUsers(allUsers);
+                localStorage.setItem("stor_ipil_users", allUsers);
+                console.log(allUsers);
+                window.alert("A sua conta foi criada com sucesso, obrigado.")
+            }else{
+                window.alert("Usuário existente, entre na sua conta!")
+            }
         }
-        
     }
 
     return(
@@ -59,14 +70,14 @@ function Cadastro(){
                     </div>
                     <div>
                         <input type="text" placeholder="NIF" onChange={(e)=>newUser.nif = e.target.value} required/>
-                        <input type="text" placeholder="Email ou Username" onChange={(e)=>newUser.contact = e.target.value} required/>
+                        <input type="email" placeholder="Email" onChange={(e)=>newUser.contact = e.target.value} required/>
                     </div>
                     <div>
                         <input type="password" placeholder="Palavra-Passe" onChange={(e)=>newUser.password = e.target.value} required/>
                         <input type="password" placeholder="Confirmar Palavra-Passe" onChange={(e)=>newUser.cpassword = e.target.value} required/>
                     </div>
                     <div className="btn-create-account">
-                        <button onClick={e=>mostre(e)}>Criar Conta</button>
+                        <button onClick={e=>AddUser(e)}>Criar Conta</button>
                     </div>
                 </form>
             </div>
