@@ -81,7 +81,7 @@ function Cadastro(){
             }
         }
     }
- 
+  
     return(
         <div className="cadastro">
             <ModalSuccessAuth />
