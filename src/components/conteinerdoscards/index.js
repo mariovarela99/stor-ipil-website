@@ -34,7 +34,7 @@ const Conteiner = () => {
            <ul className="container-list-card">
             {
               listframes.map(item =>(
-                <a href="/product-details" >
+                <a href="/product-details" key={item}>
                   <li className="frame-item"><FrameItem image={item} /> </li>
                 </a>
               ))
