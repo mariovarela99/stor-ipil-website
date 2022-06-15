@@ -13,13 +13,20 @@ function Cadastro(){
         password:"",
         cpassword:"",
     })
-    
+    const [allUsersProducts, setAllUsersProducts] = useState([]);
     const [allUsers, setAllUsers] = useState([{contact:""}]);    
 
     useEffect(
         function getAllUsers(){
             const dataFetch = JSON.parse(localStorage.getItem("stor-ipil-users")) || [{contact:""}];
             setAllUsers(dataFetch);
+    },[])
+
+    useEffect(
+        function SaveGeralData(){
+            const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
+            setAllUsersProducts(dataFetch);
+            localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
     },[])
 
     function AddUser(e){
@@ -62,6 +69,14 @@ function Cadastro(){
                 setAllUsers(allUsers);
                 console.log(allUsers);
                 localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
+                localStorage.setItem("userIdLogin", JSON.stringify(newUser.contact.trim()))
+
+                //Criando arrays de produtos do usuário a se cadastrar
+                const myProductsSpace = [{owner:newUser.contact.trim()}];
+                allUsersProducts.push(myProductsSpace);
+                console.log(allUsersProducts);
+                localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
+                //
                 document.querySelector(".modal-success-auth").style.display = "flex";
             }
         }

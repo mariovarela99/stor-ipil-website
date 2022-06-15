@@ -29,8 +29,10 @@ const Login = () => {
               decision = true;
           });
       
-          if(decision)
+          if(decision){
             alert("Sessão iniciada com sucesso")
+            localStorage.setItem("userIdLogin", JSON.stringify(user.contact))
+          }
           else  
            alert("Conta não encontrada");
           }
@@ -41,8 +43,8 @@ const Login = () => {
       <div className="main">
         <div className="container_form">
           <h1>Login</h1>
-          <input type="text" id="name" placeholder="Email or Username" onChange={(e)=>user.contact = e.target.value}></input>
-          <input type="text" id="password" placeholder="Password"  onChange={(e)=>user.password = e.target.value}></input>
+          <input type="email" id="email" placeholder="Email or Username" onChange={(e)=>user.contact = e.target.value}></input>
+          <input type="password" id="password" placeholder="Password"  onChange={(e)=>user.password = e.target.value}></input>
           <button  onClick={(e)=>hundleEnter(e)}>Iniciar Sessão</button>
           <a href="/">Esqueceu-se da Password?</a>
           <span>Não tem uma conta?</span>
