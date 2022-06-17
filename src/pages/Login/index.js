@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react";
 import "./style.css";
 
+import ModalLoginAuth from "../../components/ModalLoginAuth"
+
 const Login = () => {
   const [user, setUser] = useState({contact:"", password:""})
   var [allUsers, setAllUsers] = useState([]);
@@ -40,6 +42,7 @@ const Login = () => {
 
   return (
     <>
+      <ModalLoginAuth />
       <div className="main">
         <div className="container_form">
           <h1>Login</h1>

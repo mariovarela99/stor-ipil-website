@@ -13,7 +13,7 @@ function Cadastro(){
         password:"",
         cpassword:"",
     })
-    const [allUsersProducts, setAllUsersProducts] = useState([]);
+    var [allUsersProducts, setAllUsersProducts] = useState([]);
     const [allUsers, setAllUsers] = useState([{contact:""}]);    
 
     useEffect(
@@ -25,7 +25,8 @@ function Cadastro(){
     useEffect(
         function SaveGeralData(){
             const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
-            setAllUsersProducts(dataFetch);
+            allUsersProducts = dataFetch;
+            console.log(allUsersProducts)
             localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
     },[])
 
@@ -72,9 +73,8 @@ function Cadastro(){
                 localStorage.setItem("userIdLogin", JSON.stringify(newUser.contact.trim()))
 
                 //Criando arrays de produtos do usuário a se cadastrar
-                const myProductsSpace = [{owner:newUser.contact.trim()}];
-                allUsersProducts.push(myProductsSpace);
-                console.log(allUsersProducts);
+                allUsersProducts.push([{owner:newUser.contact}]);
+                console.log(allUsersProducts)
                 localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
                 //
                 document.querySelector(".modal-success-auth").style.display = "flex";
