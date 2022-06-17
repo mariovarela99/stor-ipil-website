@@ -102,6 +102,10 @@ export const MainHeader = styled.div`
       line-height: 19px;
 
       color: #ffa500;
+      a{
+        color: #ffa500;
+        text-transform: uppercase;
+      }
     }
   }
 `;

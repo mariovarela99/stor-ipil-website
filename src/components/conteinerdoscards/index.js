@@ -30,7 +30,7 @@ const Conteiner = () => {
           <a href="/produc-details">Saber mais</a>
         </div>
         <div>
-          <h2>Os mais vendidios</h2>
+          <h2>Os mais vendidos</h2>
            <ul className="container-list-card">
             {
               listframes.map(item =>(

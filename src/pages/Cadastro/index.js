@@ -24,9 +24,6 @@ function Cadastro(){
 
     useEffect(
         function SaveGeralData(){
-            const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
-            allUsersProducts = dataFetch;
-            console.log(allUsersProducts)
             localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
     },[])
 
@@ -72,11 +69,6 @@ function Cadastro(){
                 localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
                 localStorage.setItem("userIdLogin", JSON.stringify(newUser.contact.trim()))
 
-                //Criando arrays de produtos do usuário a se cadastrar
-                allUsersProducts.push([{owner:newUser.contact}]);
-                console.log(allUsersProducts)
-                localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
-                //
                 document.querySelector(".modal-success-auth").style.display = "flex";
             }
         }

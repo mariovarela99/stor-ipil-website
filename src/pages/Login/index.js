@@ -32,8 +32,8 @@ const Login = () => {
           });
       
           if(decision){
-            alert("Sessão iniciada com sucesso")
             localStorage.setItem("userIdLogin", JSON.stringify(user.contact))
+            document.querySelector(".modal-success-auth").style.display = "flex";
           }
           else  
            alert("Conta não encontrada");

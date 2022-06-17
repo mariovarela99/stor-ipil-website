@@ -1,10 +1,25 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import { MdOutlineFavorite } from "react-icons/md";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { CardItemContainer } from "./style";
 import cardImage from "../../assets/images/card-image-item.png";
 
 const CardProduto = () => {
+  const [allUsersProducts, setAllUsersProducts] = useState([])
+
+  useEffect(
+      function getAllUsersProducts(){
+          const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
+          setAllUsersProducts(dataFetch);
+  },[allUsersProducts])
+
+  function AddProductInCart(){
+    allUsersProducts.push("produto");
+    setAllUsersProducts(allUsersProducts);
+    console.log(allUsersProducts)
+    localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
+  }
+
   return (
     <CardItemContainer>
       <picture>
@@ -26,7 +41,7 @@ const CardProduto = () => {
       </span>
 
       <div>
-        <button className="addCart" type="button">
+        <button className="addCart" type="button"  onClick={()=>AddProductInCart()}>
           Adicionar ao Carrinho
         </button>
         <button className="addFavorites" type="button">

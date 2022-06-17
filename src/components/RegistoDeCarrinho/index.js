@@ -7,19 +7,20 @@ import Registo from "../../components/registo"
 import CarrinhoItem from "../carrinhoItem"
 
 function RegistoDeCarrinho(){
-    var [userProducts, setUserProducts] = useState([1,2])
+        const [allUsersProducts, setAllUsersProducts] = useState([])
 
-    useEffect(
-        function getUserProdutcs(){
-            const dataFecth = JSON.stringify(localStorage.getItem("allUsersProducts"));
-            userProducts = dataFecth;
-        },[])
-
+        useEffect(
+            function getAllUsers(){
+                const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
+                setAllUsersProducts(dataFetch);
+        },[allUsersProducts])
     return(
         <>
-            {userProducts.map(item=>(
-                <CarrinhoItem key={item} />
-            ))}
+            {
+                allUsersProducts.map(item=>(
+                    <CarrinhoItem key={item} />
+                ))
+            }
         </>
     )
 }

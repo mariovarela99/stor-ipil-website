@@ -1,9 +1,24 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import {FaTrash} from "react-icons/fa"
+import {Link} from "react-router-dom"
 
 import productImage01 from "../../assets/Frame01.png"
 
 function CarrinhoItem(){
+    const [allUsersProducts, setAllUsersProducts] = useState([])
+
+  useEffect(
+      function getAllUsersProducts(){
+          const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
+          setAllUsersProducts(dataFetch);
+  },[allUsersProducts])
+
+  function DeleteProductInCart(){
+    allUsersProducts.shift();
+    setAllUsersProducts(allUsersProducts);
+    console.log(allUsersProducts)
+    localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
+  }
     return (
         <div className="carrinho-registo">
                     <div className="carrinho-registo-list">
@@ -23,7 +38,7 @@ function CarrinhoItem(){
                             </div>
                         </div>
                     <div className="product-totally totally"><p>250.000,00kz</p></div>
-                    <div className="product-delete delete"><FaTrash /> </div>
+                    <div className="product-delete delete"><Link to=""><a><FaTrash onClick={()=>DeleteProductInCart()}/> </a></Link></div>
                 </div>
             </div>
     )

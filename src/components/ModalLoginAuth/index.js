@@ -8,7 +8,7 @@ function ModalSuccessAuth(){
         <div className="modal-success-auth">
             <div className="modal-success-auth-container">
                 <img src={ImgModalSuccess} alt="Successfull" />
-                <h2>Sucesso!</h2>
+                <h2>Sessão iniciada!</h2>
                 <p>Seja Bem-Vindo à sua conta</p>
                 <p>A sua conta foi encontrada com sucesso</p>
                 <Link to="/">Ok</Link>
