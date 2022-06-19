@@ -40,10 +40,26 @@ const Footer = () => {
   	 		<div class="footer-col"> 
   	 			<h4>follow us</h4>
   	 			<div class="social-links">
-  	 				<a href="#"><i><FaFacebook/></i></a>
-  	 				<a href="#"><i><FaInstagram/></i></a>
-  	 				<a href="#"><i><FaYoutube/></i></a>
-  	 				<a href="#"><i><FaTwitter/></i></a>
+					<div>
+  	 					<a href="#"><i><FaFacebook/></i>
+						<p>Facebook</p>
+						</a>
+					</div>
+					<div>
+	  	 				<a href="#"><i><FaInstagram/></i>
+						<p>Instagram</p>
+						</a>
+					</div>
+					<div>
+	  	 				<a href="#"><i><FaYoutube/></i>
+						<p>YouTube</p>
+						</a>
+					</div>
+					<div>
+	  	 				<a href="#"><i><FaTwitter/></i>
+						<p>Twitter</p>
+						</a>
+					</div>
   	 			</div>
   	 		</div>
   	 	</div>

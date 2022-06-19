@@ -34,6 +34,7 @@ ul{
 }
 .footer-col h4{
 	font-size: 18px;
+	font-weight: bold;
 	color: #222121;
 	text-transform: capitalize;
 	margin-bottom: 35px;
@@ -68,7 +69,7 @@ ul{
 	padding-left: 8px;
 }
 .footer-col .social-links a{
-	margin: 10px 0;
+	margin-bottom: 10px;
 	color: #FFA500;
 	font-size: 18px;
 	
@@ -76,6 +77,15 @@ ul{
 .footer .social-links{
 	display: flex;
 	flex-direction: column;
+}
+.footer .social-links div a{
+	display: flex;
+	align-items: center;
+}
+.footer .social-links div p{
+	margin-left: 10px;
+	color: #222121;
+	font-size: 16px;
 }
 .footer_final{
 	text-align: center;
