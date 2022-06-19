@@ -68,13 +68,14 @@ ul{
 	padding-left: 8px;
 }
 .footer-col .social-links a{
-	
+	margin: 10px 0;
+	color: #FFA500;
+	font-size: 18px;
 	
 }
 .footer .social-links{
-	width: 40px;
-	height: 40vh;
-
+	display: flex;
+	flex-direction: column;
 }
 .footer_final{
 	text-align: center;
