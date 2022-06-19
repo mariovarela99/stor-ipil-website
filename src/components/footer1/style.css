@@ -68,15 +68,7 @@ ul{
 	padding-left: 8px;
 }
 .footer-col .social-links a{
-	display: block;
-	height: 100px;
-	width: 40px;
-	background-color: #5c5a5a;
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color:#FFA500;
+	
 	
 }
 .footer .social-links{
