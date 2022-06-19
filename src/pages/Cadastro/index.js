@@ -13,13 +13,18 @@ function Cadastro(){
         password:"",
         cpassword:"",
     })
-    
+    var [allUsersProducts, setAllUsersProducts] = useState([]);
     const [allUsers, setAllUsers] = useState([{contact:""}]);    
 
     useEffect(
         function getAllUsers(){
             const dataFetch = JSON.parse(localStorage.getItem("stor-ipil-users")) || [{contact:""}];
             setAllUsers(dataFetch);
+    },[])
+
+    useEffect(
+        function SaveGeralData(){
+            localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
     },[])
 
     function AddUser(e){
@@ -62,11 +67,13 @@ function Cadastro(){
                 setAllUsers(allUsers);
                 console.log(allUsers);
                 localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
+                localStorage.setItem("userIdLogin", JSON.stringify(newUser.contact.trim()))
+
                 document.querySelector(".modal-success-auth").style.display = "flex";
             }
         }
     }
-
+  
     return(
         <div className="cadastro">
             <ModalSuccessAuth />

@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useState, useEffect} from "react"
 import { Link } from "react-router-dom";
 import { DownHeader, HeaderTag, MainHeader, SubHeader } from "./style";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
+  
+  const [allUsersProducts, setAllUsersProducts] = useState([])
+
+  useEffect(
+      function getAllUsersProducts(){
+          const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
+          setAllUsersProducts(dataFetch);
+  },[allUsersProducts])
   return (
     <>
       <HeaderTag>
@@ -49,8 +57,8 @@ const Header = () => {
             </ul>
           </nav>
           <div>
-            <button type="button">Favoritos</button>
-            <button type="button">Lista de Desejos</button>
+            <button type="button"><Link to="/login">Login</Link></button>
+            <button type="button"><Link to="/cadastro">Cadastrar</Link></button>
           </div>
         </MainHeader>
 
@@ -63,7 +71,7 @@ const Header = () => {
             <Link to="/carrinho">
               <span>Carrinho</span>
               <FaShoppingCart fontSize={18} color="#ffffff" />
-              <span> {1} </span> Item(s)
+              <span> {allUsersProducts.length} </span> Item(s)
             </Link>
           </div>
         </DownHeader>

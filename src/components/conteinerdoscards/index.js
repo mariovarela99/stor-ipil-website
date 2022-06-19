@@ -30,11 +30,11 @@ const Conteiner = () => {
           <a href="/produc-details">Saber mais</a>
         </div>
         <div>
-          <h2>Os mais vendidios</h2>
+          <h2>Os mais vendidos</h2>
            <ul className="container-list-card">
             {
               listframes.map(item =>(
-                <a href="/product-details" >
+                <a href="/product-details" key={item}>
                   <li className="frame-item"><FrameItem image={item} /> </li>
                 </a>
               ))
