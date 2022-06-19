@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 import "./style.css"
 
 import ImgModalSuccess from "../../assets/img-modal-success.svg"
-import ModalSuccess from "../ModalSucessAuth"
+import ModalSuccesBuy from "../ModalSuccessBuy"
 
 function ModalSuccessAuth(){
     const [userEmail, setUserEmail] = useState("")
@@ -34,13 +34,15 @@ function ModalSuccessAuth(){
             });
             if(decision)
             {
-                alert("Usuário existente")
+                document.querySelector(".modal-success-buy").style.display = "flex";
+                
             }else{
                 alert("Usuário não encontrado");
             }
     }
     return(
         <div className="modal-success-auth modal-comfirm-auth">
+            <ModalSuccesBuy />
             <div className="modal-success-auth-container">
                 <img src={ImgModalSuccess} alt="Successfull" />
                 <h2>Comfirmar conta</h2>

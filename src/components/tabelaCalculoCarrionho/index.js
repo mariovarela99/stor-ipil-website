@@ -22,7 +22,7 @@ function TabelaCalculoCarrinho(){
                     </tr>
                     <tr>
                         <td className="carrinho-tabela-line-right">Total de valor</td>
-                        <td>{350*allUsersProducts.length},000,00Kz</td>
+                        <td>{250*allUsersProducts.length},000,00Kz</td>
                     </tr>
                 </table>
                 <p>Preço com IVA incluído à taxa em vigor excepto livros</p>

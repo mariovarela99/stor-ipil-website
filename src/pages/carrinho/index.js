@@ -7,7 +7,7 @@ import CarrinhoRegisto from "../../components/RegistoDeCarrinho"
 import CarrinhoTabela from "../../components/tabelaCalculoCarrionho"
 import CarrinhoPub from "../../components/carrinhoPub"
 import BtnNext from "../../components/btnNext"
-import ComfirmPassword from "../../components/ModalComfirmPassword"
+import ModalSuccessBuy from "../../components/ModalSuccessBuy"
 
 import productImage from "../../assets/Frame01.png"
 
@@ -16,7 +16,7 @@ function Carrinho(){
     return(
         <>
             <Header />
-            <ComfirmPassword />
+            <ModalSuccessBuy />
             <div className="carrinho">
                 <h2 className="carrinho-title">SUMÁRIO DO CARRINHO DE COMPRAS</h2>
 
