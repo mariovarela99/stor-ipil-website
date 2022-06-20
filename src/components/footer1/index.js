@@ -11,7 +11,7 @@ const Footer = () => {
   	 	<div class="row">
   	 		<div class="footer-col">
   	 			<h4>company</h4>
-  	 			<ul>
+  	 			<ul> 
   	 				<li><a href="#">about us</a></li>
   	 				<li><a href="#">our services</a></li>
   	 				<li><a href="#">privacy policy</a></li>
