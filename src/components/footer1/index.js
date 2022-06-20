@@ -4,7 +4,7 @@ import {FaFacebook, FaInstagram, FaYoutube, FaTwitter} from "react-icons/fa"
 import "./style.css";
 
 
-const Footer = () => {
+const Footer = () => { 
   return (<>
   <footer class="footer">
   	 <div class="container">
