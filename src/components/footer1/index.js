@@ -20,7 +20,7 @@ const Footer = () => {
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>get help</h4>
-  	 			<ul>
+  	 			<ul> 
   	 				<li><a href="#">FAQ</a></li>
   	 				<li><a href="#">shipping</a></li>
   	 				<li><a href="#">returns</a></li>
