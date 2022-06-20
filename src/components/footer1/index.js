@@ -5,7 +5,7 @@ import "./style.css";
 
 
 const Footer = () => { 
-  return (<>
+  return (<> 
   <footer class="footer">
   	 <div class="container">
   	 	<div class="row">
