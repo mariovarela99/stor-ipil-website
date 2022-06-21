@@ -81,9 +81,15 @@ export const CardItemContainer = styled.li`
       height: 38px;
       border-radius: 8px;
       color: #ffffff;
-      border: none;
+      border: 1px solid #ffa500;
       font-size: 14px;
       font-weight: 700;
+      cursor: pointer;
+      transition: all .3s ease;
+    }
+    button.addCart:hover {
+      color: #ffa500;
+      background: transparent;
     }
 
     button.addFavorites {

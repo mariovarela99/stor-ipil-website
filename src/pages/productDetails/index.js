@@ -7,6 +7,7 @@ import ListFrame from "../../components/listFrame"
 
 import frame01 from "../../assets/Frame01.png"
 function ProductDetail(){
+    
     return(
         <>
             <Header />

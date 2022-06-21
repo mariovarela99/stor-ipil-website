@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Header from "../../components/header";
 import CardProduto from "../../components/cardProduto1";
 import Banner from "../../components/banner";
@@ -10,6 +10,15 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Footer from "../../components/footer1";
 
 function Home() {
+  var [allUsersProducts, setAllUsersProducts] = useState([]);
+
+  useEffect(
+    function SaveGeralData(){
+      const dataFetch = JSON.parse(localStorage.getItem("all-users-products")) || [];
+      allUsersProducts = dataFetch;
+      localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
+    },[])
+    
   return (
     <div>
       <Header />

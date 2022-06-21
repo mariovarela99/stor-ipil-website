@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from "react"
 import "./style.css"
 
+import ModalSuccessAuth from "../../components/ModalSucessAuth"
+
 function Cadastro(){
 
     const [newUser, setNewUser] = useState({
@@ -11,13 +13,18 @@ function Cadastro(){
         password:"",
         cpassword:"",
     })
-    
+    var [allUsersProducts, setAllUsersProducts] = useState([]);
     const [allUsers, setAllUsers] = useState([{contact:""}]);    
 
     useEffect(
         function getAllUsers(){
             const dataFetch = JSON.parse(localStorage.getItem("stor-ipil-users")) || [{contact:""}];
             setAllUsers(dataFetch);
+    },[])
+
+    useEffect(
+        function SaveGeralData(){
+            localStorage.setItem("all-users-products", JSON.stringify(allUsersProducts));
     },[])
 
     function AddUser(e){
@@ -44,7 +51,7 @@ function Cadastro(){
                     decision = true;
             });
             if(decision)
-            {
+            { 
                 console.log(allUsers);
                 alert("Usuário existente")
             }else{
@@ -60,13 +67,16 @@ function Cadastro(){
                 setAllUsers(allUsers);
                 console.log(allUsers);
                 localStorage.setItem("stor-ipil-users", JSON.stringify(allUsers));
-                window.alert("A sua conta foi criada com sucesso, obrigado.")
+                localStorage.setItem("userIdLogin", JSON.stringify(newUser.contact.trim()))
+
+                document.querySelector(".modal-success-auth").style.display = "flex";
             }
         }
     }
-
+  
     return(
         <div className="cadastro">
+            <ModalSuccessAuth />
             <div className="cadastro-container">
                 <h2>Criar Conta</h2>
 

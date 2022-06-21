@@ -18,7 +18,7 @@ const Footer = () => {
   	 				<li><a href="#">affiliate program</a></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>get help</h4>
   	 			<ul> 
   	 				<li><a href="#">FAQ</a></li>
@@ -28,7 +28,7 @@ const Footer = () => {
   	 				<li><a href="#">payment options</a></li>
   	 			</ul>
   	 		</div>
-  	 		<div class="footer-col">
+  	 		<div className="footer-col">
   	 			<h4>online shop</h4>
   	 			<ul>
   	 				<li><a href="#">watch</a></li>
